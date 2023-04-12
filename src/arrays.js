@@ -1,10 +1,7 @@
-const isEven = function(num) {
-  return num % 2 === 0;
-}
+const math = require("./math.js");
 
-const isOdd = function(num) {
-  return !(isEven(num));
-}
+const isEven = math.isEven;
+const isOdd = math.isOdd;
 
 const selectEvenNumbers = function(numbers) {
   const evenNumbers = [];
@@ -27,4 +24,3 @@ const selectOddNumbers = function(numbers) {
 }
 
 exports.selectEvenNumbers = selectEvenNumbers;
-exports.selectOddNumbers = selectOddNumbers;
